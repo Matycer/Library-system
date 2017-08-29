@@ -1,0 +1,16 @@
+﻿<Window x:Class="Knihovna.AddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nový uživatel" Height="300" Width="268.015">
+    <Grid>
+        <TextBox x:Name="txtName" HorizontalAlignment="Stretch" Height="23" Margin="10,49,20,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSurname" HorizontalAlignment="Stretch" Height="23" Margin="10,98,20,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+        <DatePicker x:Name="dateBi" HorizontalAlignment="Stretch" Margin="10,147,20,0" VerticalAlignment="Top" />
+        <TextBlock HorizontalAlignment="Left" Margin="10,33,0,0" TextWrapping="Wrap" Text="Jméno" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,77,0,0" TextWrapping="Wrap" Text="Přijmení" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,126,0,0" TextWrapping="Wrap" Text="Datum narození" VerticalAlignment="Top"/>
+        <Button x:Name="btnAdd" Content="Přidat" HorizontalAlignment="Right" Margin="0,239,10,0" VerticalAlignment="Top" Width="75" Click="btnAdd_Click"/>
+        <Button x:Name="btnClose" Content="Zrušit" HorizontalAlignment="Right" Margin="0,239,90,0" VerticalAlignment="Top" Width="75" Click="btnClose_Click"/>
+
+    </Grid>
+</Window>

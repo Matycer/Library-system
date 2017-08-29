@@ -1,0 +1,9 @@
+﻿<Window x:Class="Knihovna.Borrow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Vypůjčené knihy" Height="326" Width="501" Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid x:Name="dgvBorrowed" HorizontalAlignment="Stretch" Margin="10,70,10,0"  ItemsSource="{Binding}" VerticalAlignment="Stretch" HorizontalGridLinesBrush="#FFC9C9C9" VerticalGridLinesBrush="#FFC9C9C9" AutoGeneratingColumn="dgvBorrowed_AutoGeneratingColumn" SelectionChanged="dgvBorrowed_SelectionChanged" />
+        <TextBlock x:Name="txtBook" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Book" VerticalAlignment="Top" FontSize="20"/>
+    </Grid>
+</Window>
